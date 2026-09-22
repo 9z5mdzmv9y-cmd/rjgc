@@ -321,7 +321,6 @@ describe('storage', () => {
 
   it('theme 写入后可读回', () => {
     expect(saveTheme('dark')).toBe(true);
-    expect(saveTheme).toBeTruthy();
     expect(loadTheme()).toBe('dark');
   });
 });
